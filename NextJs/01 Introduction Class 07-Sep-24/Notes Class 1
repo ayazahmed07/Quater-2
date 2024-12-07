@@ -1,0 +1,26 @@
+Web 1.0 ====>> only one way of interaction
+Web 2.0 ====>> Two way communication to read and write
+
+1. Traditional Way
+HTML 
+CSS
+JAVACRIPT
+
+Reat framework ====>> Library
+NextJs         ====>> Framework 
+
+Client Side and Server Side - Client side is slow in randering
+Server side is fast compartively availaible in NextJs
+
+Advantage of using NextJs: 
+
+React is a client side Library
+inbulit routing
+
+CSR (Client Side Rendering)
+SSR (Server Side Rendering)
+SSG (Static Side Generation)
+ICR (Incremental Static Regenration)
+
+App Router 
+Hooks

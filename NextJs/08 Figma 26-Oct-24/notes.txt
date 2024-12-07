@@ -1,0 +1,6 @@
+nextjs image tag 
+props in image tag like src, width, height, alt==> description
+to use external data in components we will use it through props
+use flex always in parent div
+npx-create-next-app@14.2.15
+flex-1 means divide 50%

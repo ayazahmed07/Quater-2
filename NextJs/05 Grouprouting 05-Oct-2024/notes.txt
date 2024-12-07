@@ -1,0 +1,9 @@
+Rendering in NextJs
+Client Side Rendering
+
+Server Side Rendering
+
+Static Server Side Rendering
+Dynamic Service Side Rendering
+
+We can achieve multiple rendering in nextjs

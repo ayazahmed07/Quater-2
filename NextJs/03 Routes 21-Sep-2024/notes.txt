@@ -1,0 +1,5 @@
+to use repetative layout we will make a component
+always keep first letter capital of componnent
+component will return an HTML
+to implement header and footer on the whole website that will be placed in layout file
+===> make a sidebar and 2 more components - group routing in nextjs

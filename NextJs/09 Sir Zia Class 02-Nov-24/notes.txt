@@ -1,0 +1,54 @@
+3Tier Archetier Web Archetier
+Front End - Next Js - First Tier
+API - Python - Midle Tier
+BackEnd - Mangodb MySql - End Tier 
+It also called cloud Native
+
+we will make AI agents from langraph and langchain
+
+DIfference between AI agents and application
+Application dont have state and AI
+(LLM like a brain)
+
+AI Agent have LLM and have state.
+
+To make AI agents we use 
+1 langchain 
+2 langraph (will talk with API 0r LLM using langchain)
+3 knowledge graph (gaph query language)
+
+
+INFERENCE - USE WHAT ALREADY TRAINED 
+
+
+AI NARROW INTELLIGENCE AND GENERAL INTELLIGENCE
+TO ACHEIVE ARTIFICAIL GENERAL INTELLIGENCE THERE ARE 5 LEVELS
+
+Level 1
+ChatGPT - OpenAI agreement with Microsoft
+Claude - AnthropiX and Amazon
+Google Gemini - 
+Meta - Lama 3.2 
+
+Level 2 - Resoning i.e thinking O.1 PREVIEW ==> MODEL PREVIEW FOR THINKING - AGI
+		CHAIN OF THOUGHTS - 1ST EXAMPLE
+		SYSTEM 1 THINKING PROMPT THINKING QUICK RESPONSE
+		SYSTEM 2 THINKING DEEP REASONING - INDEAPTH ANALYSIS ==> INFERENCE TIME COMPUTING
+
+LEVEL 3 - AGENTIC AI - NEW APP - 2025 AGENTS ERA 
+TO USE LEVEL 1 AND LEVEL TO MAKE AI AGENTS
+USER INTERFACE OF AI AGENTS?? TWO TYPES OF INTERFACE 
+VOICE - HYBRID INTERFACE - CLOUD AND OPEN AI CANVAS
+HUMAN LIKE INTERFACE
+
+
+LEVAL 4 - MODEL WILL ANNOVATE NEW THINGS - ANNOVATION
+
+
+LEVEL 5 - ORGANIZATION
+
+
+
+
+
+

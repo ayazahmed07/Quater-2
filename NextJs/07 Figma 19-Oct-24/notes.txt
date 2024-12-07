@@ -1,0 +1,10 @@
+UI/UX
+
+UI - User Interface 
+UX - User Experience
+
+Figma 
+
+Why we use tailwind CSS ===> We use already made classes - We can customize tailwind css not bootstrap
+
+We always use Flex in Parent Div
