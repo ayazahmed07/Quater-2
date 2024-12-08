@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { CircleArrowLeftIcon, Fullscreen } from "lucide-react";
 import Image from "next/image";
@@ -10,7 +9,7 @@ import { MdArrowCircleUp, MdRoundedCorner, MdSupport } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-[8032px] w-full bg-white">
+    <div className="flex flex-col h-screen w-full bg-white">
       <div className="mt-2">
         <Image
           src="/images/promotional.jpg"
