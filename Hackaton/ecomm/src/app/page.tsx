@@ -259,6 +259,51 @@ export default function Home() {
         <FaCircleArrowRight color="red" />
         <FaCircleArrowRight color="red" />
       </div>
+
+      <div className="flex justify-center items-center mt-32">
+        <Image
+          src="/images/update.jpg"
+          height={462}
+          width={1920}
+          alt="Main Image"
+        /> </div>
+
+<div className="flex justify-center items-center mt-16">
+        <Image
+          src="/images/logos.jpg"
+          height={93}
+          width={904}
+          alt="Main Image"
+        /> </div>
+
+<div className="mt-[50px] flex text-3xl text-[#1A0B5B] justify-center font-bold">
+        Latest Blog
+      </div>
+
+      <div className="flex justify-center items-center">
+        <Image
+          src="/images/b1.jpg"
+          height={493}
+          width={370}
+          alt="Main Image"
+        />
+
+        <Image
+          src="/images/b2.jpg"
+          height={493}
+          width={370}
+          alt="Main Image"
+        />
+
+        <Image
+          src="/images/b3.jpg"
+          height={493}
+          width={370}
+          alt="Main Image"
+        />
+
+</div>
     </div>
+    
   );
 }
