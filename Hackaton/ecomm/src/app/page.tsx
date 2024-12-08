@@ -1,15 +1,13 @@
-import Header from "@/components/Header";
-import { CircleArrowLeftIcon, Fullscreen } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { AiOutlineMinus } from "react-icons/ai";
-import { CgSupport } from "react-icons/cg";
-import { FaTruck } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTruck } from "react-icons/fa";
 import { FaCircleArrowRight, FaSuperpowers } from "react-icons/fa6";
-import { MdArrowCircleUp, MdRoundedCorner, MdSupport } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen w-full bg-white">
+    <div className="flex flex-col h-[6500px] w-full bg-white">
       <div className="mt-2">
         <Image
           src="/images/promotional.jpg"
@@ -174,7 +172,7 @@ export default function Home() {
 
       <div></div>
 
-      <div className="bg-[#F1F0FF] h-[579] w-[1920] mt-11">
+      <div className="bg-[#F1F0FF] h-[579px] w-[1530px] mt-11">
         <Image
           src="/images/uniquesofa.png"
           height={550}
@@ -263,46 +261,106 @@ export default function Home() {
         <Image
           src="/images/update.jpg"
           height={462}
-          width={1920}
+          width={1530}
           alt="Main Image"
-        /> </div>
+        />{" "}
+      </div>
 
-<div className="flex justify-center items-center mt-16">
+      <div className="flex justify-center items-center mt-16">
         <Image
           src="/images/logos.jpg"
           height={93}
           width={904}
           alt="Main Image"
-        /> </div>
+        />{" "}
+      </div>
 
-<div className="mt-[50px] flex text-3xl text-[#1A0B5B] justify-center font-bold">
+      <div className="mt-[50px] flex text-3xl text-[#1A0B5B] justify-center font-bold">
         Latest Blog
       </div>
 
       <div className="flex justify-center items-center">
-        <Image
-          src="/images/b1.jpg"
-          height={493}
-          width={370}
-          alt="Main Image"
-        />
+        <Image src="/images/b1.jpg" height={493} width={370} alt="Main Image" />
 
-        <Image
-          src="/images/b2.jpg"
-          height={493}
-          width={370}
-          alt="Main Image"
-        />
+        <Image src="/images/b2.jpg" height={493} width={370} alt="Main Image" />
 
-        <Image
-          src="/images/b3.jpg"
-          height={493}
-          width={370}
-          alt="Main Image"
-        />
+        <Image src="/images/b3.jpg" height={493} width={370} alt="Main Image" />
+      </div>
 
-</div>
+      <div className="flex bg-[#EEEFFB] h-[532px] w-[1530px]">
+        <div className="flex mt-20 ml-10 flex-col">
+          <p className="flex font-extrabold text-4xl">Hekto</p>
+
+          <div className="flex mt-8 items-center">
+            <div className="flex items-center">
+              <input
+                type="text"
+                placeholder="Enter Email Address"
+                className="w-full border border-gray-300 px-4 py-2 text-center focus:outline-none focus:ring-2 focus:ring-pink-600"
+              ></input>
+            </div>
+            <div className="w-55 px-4 py-2 text-white bg-pink-600">
+              <button>Sign Up</button>
+            </div>
+          </div>
+
+          <div className="flex flex-col text-[#8A8FB9] mt-10">
+            <p>Contact Info</p>
+            <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          </div>
+        </div>
+
+        <div className="flex gap-20 ml-48 mt-20 mb-10">
+          <div>
+            <p className="flex font-bold mb-10 text-2xl">Catagories</p>
+            <div className="text-[#8A8FB9] gap-3 flex flex-col">
+              <ul>Laptop & Computers</ul>
+              <ul>Cameras & Photography</ul>
+              <ul>Smart Phones & Tablets</ul>
+              <ul>Video Games & Consoles</ul>
+              <ul>Waterproof Headphones</ul>
+            </div>
+          </div>
+          <div>
+            <p className="flex font-bold mb-10 text-2xl">Customer Care</p>
+            <div className="text-[#8A8FB9] gap-3 flex flex-col">
+              <ul>My Account</ul>
+              <ul>Discount</ul>
+              <ul>Returns</ul>
+              <ul>Order History</ul>
+              <ul>Order Tracking</ul>
+            </div>
+          </div>
+          <div>
+            <p className="flex font-bold mb-10 text-2xl">Pages</p>
+            <div className="text-[#8A8FB9] gap-3 flex flex-col">
+              <ul>Blog</ul>
+              <ul>Browse the Shop</ul>
+              <ul>Category</ul>
+              <ul>Pre-Built Pages</ul>
+              <ul>Visual Composer Elements</ul>
+              <ul>WooCommerce Pages</ul>
+            </div>
+          </div>{" "}
+        </div>
+      </div>
+
+      <div className="flex bg-[#E7E4F8] h-[53px] w-[1530px] items-center justify-between">
+        <p className="text-[#9DA0AE] m-[150px]">
+          ©Ayaz Ahmed - All Rights Reserved 2024
+        </p>
+        <div className="flex gap-2 m-[150px]">
+          <p>
+            <FaFacebook size={20} color="blue" />{" "}
+          </p>
+          <p>
+            <FaLinkedin size={20} color="blue" />{" "}
+          </p>
+          <p>
+            <FaInstagram size={20} color="red" />{" "}
+          </p>{" "}
+        </div>
+      </div>
     </div>
-    
   );
 }
