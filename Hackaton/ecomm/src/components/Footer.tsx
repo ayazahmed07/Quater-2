@@ -3,14 +3,13 @@ import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
-    <div className="flex">
-      <div className="flex h-[440px] w-[1512px] bg-[#000000]">
-<div className="h-[236px] w-[1170px] flex justify-center items-start gap-[87px] text-white">
-Exclusive
-</div>
-      </div>
-
-    </div>
+    
+    <footer className="h-[532px] bg-[#E7E4F8] text-[#9DA0AE] py-3 text-center">
+    
+      © 2024-Ayaz Ahmed-All rights reserved-
+    
+  </footer>
+  
   );
 };
 
