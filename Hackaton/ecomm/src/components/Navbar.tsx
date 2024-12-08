@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { Input } from "./ui/input";
-import Input_ from "postcss/lib/input";
+
 
 const Navbar = () => {
   return (

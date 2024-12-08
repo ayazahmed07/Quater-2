@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+"use client"
+
 import Image from "next/image";
 import { AiOutlineMinus } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTruck } from "react-icons/fa";
-import { FaCircleArrowRight, FaSuperpowers } from "react-icons/fa6";
+import { FaCircleArrowRight, } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
           height={764}
           width={1530}
           alt="Main Image"
+          className="w-full"
         />
       </div>
 
