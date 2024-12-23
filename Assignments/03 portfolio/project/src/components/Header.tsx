@@ -8,14 +8,13 @@ export const Header = () => {
              
             <div className='mb-2 sm:mb-0 text-2xl'>Ayaz Ahmed</div>
 
-
             <div className='flex gap-4 sm:gap-11 items-center'>
                 <Link href="/"> Home   </Link>
                 <Link href="/About"> About   </Link>
                 <Link href="/Services"> Services   </Link>
                 <Link href="/Blog"> Blog  </Link>
             </div>
-            
+
             <div className='mt-2 sm:mt-0'>
                <Button variant={'destructive'}> Contact Me </Button>
             </div>
