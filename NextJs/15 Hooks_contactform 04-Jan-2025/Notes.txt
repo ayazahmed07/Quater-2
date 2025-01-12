@@ -1,0 +1,3 @@
+Zod Library to define schema
+react hook form library
+Ctrl K to open list in shadcn
