@@ -1,0 +1,17 @@
+Home function will always be default function
+
+tsx ===> typescript xml
+
+make a folder in app to create the routS - use naming convention like 1st word should not be in upper letter
+
+nextjs only understand page.tsx file in every page
+
+nextjs only return one element like multiple code wrap in a div
+
+import link from next
+
+when we immport a component its first word will be capital
+
+only / to link with default page in href
+
+layout file and components

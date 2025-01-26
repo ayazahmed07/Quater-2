@@ -1,0 +1,10 @@
+
+CSR (Client Side Rendering)
+SSR (Server Side Rendering)
+SSG (Static Site Generation)
+ISR (Incremental Site Regeneration)
+
+Make a presentation
+
+text-transform - uppercase lowercase or capitalize
+mdnwebtalks
