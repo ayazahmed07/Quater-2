@@ -23,10 +23,12 @@ export default async function Home (){
     <div>
       {products.map((product: any) => (
         <div key={product._id}>
-          <h2>{product.name}</h2>
-          <p>{product.description}</p>
-          <p>{product.price}</p>
-          <img src={product.image_url} alt={product.name} height={100} width={100} />
+          <h2>Product Name: {product.name}</h2>
+          <p>Product Price: {product.price}</p>
+          <h2>Discount Percentage: {product.discountPercentage}</h2>
+          <p>Product Description: {product.description}</p>
+          
+          <img src={product.image_url} alt={product.name} height={400} width={400} />
         </div>
       ))}
     </div>
