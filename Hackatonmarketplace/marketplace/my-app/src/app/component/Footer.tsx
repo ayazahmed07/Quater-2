@@ -56,8 +56,8 @@ const Footer =()=>{
               <li>Browse the Shop</li>
               <li>Category</li>
               <li>Pre-Built Pages</li>
-              <li>Visual Composer Elements</li>
-              <li>WooCommerce Pages</li>
+              {/* <li>Visual Composer Elements</li>
+              <li>WooCommerce Pages</li> */}
             </ul>
           </div>
         </div>

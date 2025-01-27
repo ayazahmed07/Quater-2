@@ -1,10 +1,16 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { Input } from "./ui/input";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Track menu state for mobile
+  const [activeLink, setActiveLink] = useState(""); // Track the currently active link
+
+  // Function to handle link click
+  const handleLinkClick = (link: string) => {
+    setActiveLink(link); // Update the active link
+  };
 
   return (
     <div className="bg-white">
@@ -15,12 +21,54 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-6 items-center">
-          <ul className="text-red-400 cursor-pointer">Home</ul>
-          <ul className="cursor-pointer">Pages</ul>
-          <ul className="cursor-pointer">Products</ul>
-          <ul className="cursor-pointer">Blog</ul>
-          <ul className="cursor-pointer">Shop</ul>
-          <ul className="cursor-pointer">Contact</ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Home" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Home")}
+          >
+            Home
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Pages" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Pages")}
+          >
+            Pages
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Products" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Products")}
+          >
+            Products
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Blog" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Blog")}
+          >
+            Blog
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Shop" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Shop")}
+          >
+            Shop
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Contact" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Contact")}
+          >
+            Contact
+          </ul>
         </div>
 
         {/* Search Input */}
@@ -51,12 +99,54 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="lg:hidden flex flex-col items-center gap-4 mt-4 pb-4 bg-gray-100">
-          <ul className="text-red-400 cursor-pointer">Home</ul>
-          <ul className="cursor-pointer">Pages</ul>
-          <ul className="cursor-pointer">Products</ul>
-          <ul className="cursor-pointer">Blog</ul>
-          <ul className="cursor-pointer">Shop</ul>
-          <ul className="cursor-pointer">Contact</ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Home" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Home")}
+          >
+            Home
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Pages" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Pages")}
+          >
+            Pages
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Products" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Products")}
+          >
+            Products
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Blog" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Blog")}
+          >
+            Blog
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Shop" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Shop")}
+          >
+            Shop
+          </ul>
+          <ul
+            className={`cursor-pointer ${
+              activeLink === "Contact" ? "text-red-500" : "text-black"
+            } hover:text-red-300`}
+            onClick={() => handleLinkClick("Contact")}
+          >
+            Contact
+          </ul>
         </div>
       )}
     </div>
