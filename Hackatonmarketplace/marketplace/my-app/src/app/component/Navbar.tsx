@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link'
 import React, { useState } from "react";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { Input } from "./ui/input";
@@ -27,8 +28,9 @@ const Navbar = () => {
             } hover:text-red-300`}
             onClick={() => handleLinkClick("Home")}
           >
-            Home
+           <Link href={"/"}> Home </Link>
           </ul>
+          
           <ul
             className={`cursor-pointer ${
               activeLink === "Pages" ? "text-red-500" : "text-black"
@@ -37,14 +39,15 @@ const Navbar = () => {
           >
             Pages
           </ul>
+          
           <ul
             className={`cursor-pointer ${
               activeLink === "Products" ? "text-red-500" : "text-black"
             } hover:text-red-300`}
             onClick={() => handleLinkClick("Products")}
           >
-            Products
-          </ul>
+           <Link href="/Products">  Products </Link>
+          </ul> 
           <ul
             className={`cursor-pointer ${
               activeLink === "Blog" ? "text-red-500" : "text-black"
