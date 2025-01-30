@@ -8,17 +8,18 @@ export default async function Featuredproducts() {
       {products.map((product: any) => (
         <div
           key={product._id}
-          className="h-[330px] w-[230px] bg-white shadow-md rounded-lg overflow-hidden transition duration-300"
+          className="h-[330px] w-[230px] bg-white shadow-md rounded-lg overflow-hidden"
         >
-          {/* Image Background with Hover Effect */}
+         
           <div className="p-4 bg-[#F7F7F7] hover:bg-[#F6F7FB] transition duration-300">
             <div className="flex justify-center items-center">
               <img
                 src={product.image_url}
                 alt={product.name}
-                className="w-[175px] h-[175px] transition-transform duration-300 hover:scale-110"
+                className="w-[175px] h-[175px]"
               />
             </div>
+           
           </div>
 
           <div className="p-9 w-full group bg-white transition duration-300 hover:bg-blue-900 text-center">
