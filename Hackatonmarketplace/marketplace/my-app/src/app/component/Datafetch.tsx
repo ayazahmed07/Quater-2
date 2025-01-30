@@ -2,7 +2,7 @@ import { client } from "@/sanity/lib/client";
 
 const getProducts = async () => {
     const products = await client.fetch(`
-      *[_type == "product"]{
+      *[_type == "product"][0..3]{
         _id,
       name,
       price,
