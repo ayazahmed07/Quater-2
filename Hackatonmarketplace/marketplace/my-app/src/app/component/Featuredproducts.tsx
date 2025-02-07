@@ -9,6 +9,7 @@ export default async function Featuredproducts() {
   
   return (
     <div className="flex flex-wrap justify-center m-10 mr-[100px] ml-[100px] gap-5 ">
+      
       {filteredProducts.map((product: any) => (
         <div
           key={product._id}

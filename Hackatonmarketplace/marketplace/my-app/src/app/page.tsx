@@ -14,8 +14,10 @@ export default async function Home() {
       <div id="featured-products" className="mt-[75px] flex text-3xl text-[#1A0B5B] justify-center font-bold">
         Featured Products
       </div>
+      
 <Featuredproducts/>
 <Latestproduct/>
+
     </div>
   );
 }
