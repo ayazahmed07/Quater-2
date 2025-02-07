@@ -22,9 +22,14 @@ export default async function Featuredproducts() {
                 className="w-[175px] h-[175px]"
               />
             </div>
+            <div className="mt-3 flex justify-center">
+              <button className="bg-green-500 text-white px-1 py-1 text-[10px] hover:bg-green-600 transition duration-300">
+                View Details
+              </button>
+            </div>
           </div>
 
-          <div className="p-9 w-full group bg-white transition duration-300 hover:bg-blue-900 text-center">
+          <div className="p-3 w-full group bg-white transition duration-300 hover:bg-blue-900 text-center">
             <p className="text-center font-bold text-pink-600 group-hover:text-white transition duration-300">
               Cantilever Chair
             </p>
