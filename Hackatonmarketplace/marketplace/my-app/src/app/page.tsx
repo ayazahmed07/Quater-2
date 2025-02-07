@@ -1,6 +1,8 @@
 import getProducts from './component/Datafetch'
 import Productgrid from './component/Featuredproducts';
+import Latestproduct from './component/Latestproduct';
 import Promotional from './component/Promotional'; 
+
 
 
 export default async function Home() {
@@ -13,6 +15,7 @@ export default async function Home() {
         Featured Products
       </div>
 <Productgrid/>
+<Latestproduct/>
     </div>
   );
 }
