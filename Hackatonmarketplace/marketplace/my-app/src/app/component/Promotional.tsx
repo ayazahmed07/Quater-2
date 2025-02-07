@@ -1,31 +1,40 @@
 import React from 'react';
 import Image from 'next/image';
 
+
 const Promotional = () => {
   return (
     <div>
       {/* Outer Container */}
-      <div className="flex flex-col lg:flex-row w-full h-[auto] bg-[#F2F0FF] items-start justify-start p-0 gap-6 lg:gap-[550px]">
+      <div className="flex bg-[#F2F0FF]">
         {/* Lamp Image */}
-        <div className="flex justify-center">
+        <div className="flex">
           <Image
             src="/Images/lamp.jpg"
-            height={220}
-            width={220}
+            height={387}
+            width={387}
             alt="Promotional"
-            className="rounded-lg"
+      
           />
         </div>
 
+
+<div className="flex flex-col gap-5 justify-center"> 
+  <p className="text-pink-500"> Best Furniture for your castle </p>
+  <h1 className="text-[30px] font-bold"> New Furniture Collection Trends in 2020  </h1>
+  <p className=""> This site is currently underdevelopment - Ayaz Ahmed </p>
+   </div>
+   
+      
+
                 {/* Sofa Image */}
-        <div className="flex justify-center lg:ml-[50px] lg:h-[420px] mt-[20px] mb-10">
+        <div className="flex">
           <Image
             src="/Images/sofapromotional.jpg"
             height={400}
             width={450}
             alt="Sofa"
-            className="rounded-lg"
-          />
+                 />
         </div>
       </div>
     </div>

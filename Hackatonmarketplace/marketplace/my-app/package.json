@@ -24,7 +24,7 @@
     "react-is": "^19.0.0",
     "reacticons": "^0.0.1",
     "sanity": "^3.71.2",
-    "shadcn": "^2.1.8",
+    "shadcn": "^2.3.0",
     "styled-components": "^6.1.14",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
