@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 
+
 import React, { useState } from "react";
 
-const Latestproduct = () => {
+const Lpsection = () => {
   const [activeLink, setActiveLink] = useState(""); // Track the currently active link
 
   // Function to handle link click
@@ -51,9 +52,10 @@ const Latestproduct = () => {
           Special Offer
         </ul>
       </div>
-      <div></div>
+      
     </div>
   );
 };
 
-export default Latestproduct;
+export default Lpsection;
+
