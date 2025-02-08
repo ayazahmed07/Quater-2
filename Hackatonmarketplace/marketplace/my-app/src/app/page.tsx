@@ -1,8 +1,9 @@
-import getProducts from './component/Datafetch'
-import Featuredproducts from './component/Featuredproducts';
-import Latestproducts from './component/Latestproducts';
-import Lpsection from './component/Lpsection';
-import Promotional from './component/Promotional'; 
+import getProducts from '@/components/Datafetch';
+import Featuredproducts from '@/components/Featuredproducts';
+import Latest from '@/components/Latestproducts';
+import Lpsection from '@/components/Lpsection';
+import Promotional from '@/components/Promotional'; 
+import Shopexsection from '@/components/Shopexsection';
 
 
 
@@ -18,7 +19,8 @@ export default async function Home() {
       
 <Featuredproducts/>
 <Lpsection/>
-<Latestproducts/>
+<Latest/>
+<Shopexsection/>
 
 
     </div>

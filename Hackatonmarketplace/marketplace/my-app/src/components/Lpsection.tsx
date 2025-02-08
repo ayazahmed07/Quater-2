@@ -17,7 +17,7 @@ const Lpsection = () => {
       <div className="mt-[75px] flex text-2xl md:text-3xl text-[#1A0B5B] justify-center font-bold text-center">
         Latest Products
       </div>
-      <div className="flex flex-wrap mt-3 mb-7 text-[#1A0B5B] items-center justify-center gap-4 md:gap-9 text-sm md:text-base">
+      <div className="flex flex-wrap mt-3 mb-2 text-[#1A0B5B] items-center justify-center gap-4 md:gap-9 text-sm md:text-base">
         <ul
           className={`cursor-pointer ${
             activeLink === "New Arrival" ? "text-red-800 underline" : "text-black "

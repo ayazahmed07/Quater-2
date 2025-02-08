@@ -1,16 +1,31 @@
-import getProducts from "./Datafetch";
+import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
-export default async function Latestproducts() {
+const getProducts = async () => {
+  const products = await client.fetch(`
+    *[_type == "product"][7..12] {
+      _id,
+    name,
+    price,
+    discountPercentage,
+    stockLevel,
+    isFeaturedProduct,
+    description,
+    
+    
+    "image_url": image.asset->url,
+
+    }
+  `);
+
+  return products;
+};
+
+export default async function Latest() {
   const products = await getProducts();
-
-  const filteredProducts = products.filter(
-    (product: any) => product.isFeaturedProduct
-  );
-
   return (
     <div className="flex flex-wrap justify-center gap-5 px-6 lg:px-24 py-6">
-      {filteredProducts.map((product: any) => (
+      {products.map((product: any) => (
         <div
           key={product._id}
           className="w-full sm:w-[48%] md:w-[31%] lg:w-[25%] bg-white"
@@ -26,7 +41,7 @@ export default async function Latestproducts() {
               />
             </div>
           </div>
-          <div className="flex justify-between text-[12px] text-blue-600 font-bold p-2">
+          <div className="flex justify-between text-[12px] text-blue-800 font-bold p-2">
             <span>{product.name.split(" ").slice(0, 3).join(" ")}</span>
             <span>Rs. {product.price}</span>
           </div>
