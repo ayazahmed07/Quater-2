@@ -1,5 +1,6 @@
 import { AiOutlineMinus } from "react-icons/ai";
 import getProducts from "./Datafetch";
+import Image from "next/image";
 
 export default async function Featuredproducts() {
   const products = await getProducts();
@@ -13,14 +14,16 @@ export default async function Featuredproducts() {
       {filteredProducts.map((product: any) => (
         <div
           key={product._id}
-          className="h-[330px] w-[230px] bg-white shadow-md rounded-lg overflow-hidden"
+          className="h-[380px] w-[220px] bg-white shadow-md rounded-lg overflow-hidden"
         >
-          <div className="p-4 bg-[#F7F7F7] hover:bg-[#F6F7FB] transition duration-300">
+          <div className="p-5 bg-[#F7F7F7] hover:bg-[#F6F7FB] transition duration-300">
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src={product.image_url}
                 alt={product.name}
-                className="w-[175px] h-[175px]"
+              height={90}
+              width={90}
+              className="w-[175px] h-[175px]"
               />
             </div>
             <div className="mt-3 flex justify-center">
@@ -30,7 +33,7 @@ export default async function Featuredproducts() {
             </div>
           </div>
 
-          <div className="p-3 w-full group bg-white transition duration-300 hover:bg-blue-900 text-center">
+          <div className="p-8 w-full group bg-white transition duration-300 hover:bg-blue-900 text-center">
             <p className="text-center font-bold text-pink-600 group-hover:text-white transition duration-300">
               Cantilever Chair
             </p>

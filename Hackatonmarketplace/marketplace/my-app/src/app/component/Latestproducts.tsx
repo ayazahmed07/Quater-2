@@ -1,4 +1,5 @@
 import getProducts from "./Datafetch";
+import Image from "next/image";
 
 export default async function Latestproducts() {
   const products = await getProducts();
@@ -8,7 +9,7 @@ export default async function Latestproducts() {
   );
 
   return (
-    <div className="flex flex-wrap justify-center m-2 mb-6 mr-[150px] ml-[150px] gap-5 ">
+    <div className="grid grid-cols-3 justify-center m-2 mb-6 mr-[400px] ml-[400px] gap-5 ">
       {filteredProducts.map((product: any) => (
         <div
           key={product._id}
@@ -16,11 +17,13 @@ export default async function Latestproducts() {
         >
           <div className="p-4 bg-[#F7F7F7] hover:bg-white transition duration-300">
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src={product.image_url}
                 alt={product.name}
+                height={90}
+                width={90}
                 className="w-[175px] h-[175px]"
-              />
+                />
             </div>
           </div>
           <div className="flex gap-9 text-[10px] text-blue-600 font-bold justify-left ml-2 mt-1">
