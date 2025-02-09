@@ -4,6 +4,8 @@ import Latest from '@/components/Latestproducts';
 import Lpsection from '@/components/Lpsection';
 import Promotional from '@/components/Promotional'; 
 import Shopexsection from '@/components/Shopexsection';
+import Uniquefeatureproduct from '@/components/Uniquefeatureprod';
+import uniquefeatureproduct from '@/components/Uniquefeatureprod';
 
 
 
@@ -21,6 +23,7 @@ export default async function Home() {
 <Lpsection/>
 <Latest/>
 <Shopexsection/>
+<Uniquefeatureproduct/>
 
 
     </div>
