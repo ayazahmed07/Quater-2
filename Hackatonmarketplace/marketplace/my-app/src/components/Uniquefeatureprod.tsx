@@ -13,13 +13,20 @@ const Uniquefeatureproduct = () => {
             alt="sofa"
           />
         </div>
-        <div className="flex">
-            <h1>Unique Features Of leatest &
-            Trending Poducts</h1>
+        <div className="flex flex-col w-[600px] h-[400px] justify-center text-start ">
+          <h1 className="text-[#151875] text-4xl">
+            Unique Features Of leatest & Trending Poducts
+          </h1>
+          <p> All frames constructed with hardwood solids and laminates </p>
+          <p>
+          
+            Reinforced with double wood dowels, glue, screw - nails corner
+            blocks and machine nails
+          </p>
+          <p> Arms, backs and seats are structurally reinforced</p>
         </div>
 
-        <button className="bg-pink-500 px-4 py-2 text-white text-sm">
-         
+        <button className="flex flex-col bg-pink-500 px-2 py-2 text-white text-sm">
           Add to Cart
         </button>
       </div>
