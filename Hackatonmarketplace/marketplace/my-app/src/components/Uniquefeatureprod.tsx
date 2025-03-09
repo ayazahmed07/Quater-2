@@ -8,17 +8,17 @@ const Uniquefeatureproduct = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src="/Images/Group153.jpg"
+            src="/Images/Group153.png"
             height={299}
             width={400}
             alt="sofa"
-            className="rounded-lg shadow-lg"
+            className="bg-[#F5E1FC] rounded-full"
           />
         </div>
 
         {/* Text Section */}
         <div className="flex flex-col w-full md:w-1/2 text-start">
-          <h1 className="text-[#151875] text-2xl md:text-4xl font-bold mb-4">
+          <h1 className="text-[#151875] text-2xl md:text-4xl font-bold mb-4 font-josefin-Sans">
             Unique Features Of Latest & Trending Products
           </h1>
 

@@ -25,7 +25,7 @@ export default async function Trendingproducts() {
       {products.map((product: any) => (
         <div
           key={product._id}
-          className="w-full sm:w-[48%] md:w-[31%] lg:w-[22%] bg-white p-2 lg shadow-md"
+          className="w-full sm:w-[48%] md:w-[31%] lg:w-[15%] bg-white p-2 lg shadow-md"
         >
           {/* Product Image */}
           <div className="p-4 bg-[#F7F7F7] hover:bg-white transition duration-300">
@@ -42,18 +42,23 @@ export default async function Trendingproducts() {
 
  {/* White Space Below Image */}
 <div className="m-7 text-center text-[#151875]">
-  <h1 className="text-xl font-bold">Cantiliver Chair</h1>
+  <h1 className="text-sm font-bold">Cantiliver Chair</h1>
 
   {/* Discounted Price (Actual Price - 200) */}
-  <span className="text-lg font-semibold text-[#151875]">Rs. {product.price - 200}</span>
+  <span className="text-sm font-semibold text-[#151875]">Rs. {product.price - 100}</span>
 
   {/* Original Price (With Strikethrough) */}
-  <span className="text-lg text-gray-400 line-through ml-3">Rs. {product.price}</span>
+  <span className="text-sm text-gray-400 line-through ml-3">Rs. {product.price}</span>
+
+  
 </div>
 
 
+
         </div>
+        
       ))}
+      
     </div>
   );
 }

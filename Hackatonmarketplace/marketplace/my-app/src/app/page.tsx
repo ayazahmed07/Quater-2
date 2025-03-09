@@ -5,6 +5,7 @@ import Lpsection from "@/components/Lpsection";
 import Promotional from "@/components/Promotional";
 import Shopexsection from "@/components/Shopexsection";
 import Trendingproducts from "@/components/Trendingproducts";
+import Trend from "@/components/Trend";
 import Uniquefeatureproduct from "@/components/Uniquefeatureprod";
 
 export default async function Home() {
@@ -30,7 +31,9 @@ export default async function Home() {
       >
         Trending Products
       </div>
-      <Trendingproducts />
+      <Trendingproducts/>
+      <Trend/>
+  
     </div>
   );
 }
